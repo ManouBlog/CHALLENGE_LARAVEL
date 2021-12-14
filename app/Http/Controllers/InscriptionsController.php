@@ -38,6 +38,6 @@ class InscriptionsController extends Controller
          //creation d une nouvelle table dans la base de donnee
             Inscription::create($request->all());
           //rediriger l utilisateur and envoyer un message
-          return redirect()->route('inscriptions.index')->with('success','creation du compte avec success');
+          return redirect()->route('products.index')->with('success','creation du compte avec success');
     }
 }

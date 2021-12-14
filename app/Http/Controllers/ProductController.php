@@ -39,9 +39,9 @@ class ProductController extends Controller
     {
         //faire rentre les infos dans la db
         $request->validate([
-            'name' => 'required',
-            'prenom'=> 'required',
-            'email'=> 'required'
+            'libelle' => 'required',
+            'quantite_minimal'=> 'required',
+            'quantite_stock'=> 'required'
 
         ]);
          //creation d une nouvelle table dans la base de donnee
@@ -83,9 +83,9 @@ class ProductController extends Controller
     {
         //faire rentre les infos dans la db
         $request->validate([
-            'name' => 'required',
-            'prenom'=> 'required',
-            'email'=> 'required'
+            'libelle' => 'required',
+            'quantite_minimal'=> 'required',
+            'quantite_stock'=> 'required'
 
         ]);
          //c est la requete

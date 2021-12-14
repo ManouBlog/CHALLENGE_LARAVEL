@@ -29,13 +29,13 @@
       @csrf
       @method('PUT')
    <div>
-       <input type="text" name="name" id="name" value="{{$product->name}}">
+       <input type="text" name="libelle" id="libelle" value="{{$product->libelle}}">
    </div>
    <div>
-       <input type="text" name="prenom" id="prenom"value="{{$product->prenom}}">
+       <input type="text" name="quantite_minimal" id="quantite_minimal"value="{{$product->quantite_minimal}}">
    </div>
    <div>
-       <input type="text" name="email" id="email" value="{{$product->email}}">
+       <input type="text" name="quantite_stock" id="quantite_stock" value="{{$product->quantite_stock}}">
    </div>
    <div>
        <input type="submit" value="envoyer">

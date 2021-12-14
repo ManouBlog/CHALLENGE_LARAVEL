@@ -8,18 +8,7 @@
 @endsection
 
 @section('content')
-@if($errors->any())
-<div>
-    <p>vueillez entre les données</p>
-    <ul>
-        @foreach($errors->all() as $error)
-        <li>
-            {{$error}}
-        </li>
-        @endforeach
-    </ul>
-</div>
-@endif
+
 
 <div class="contenu">
     
@@ -27,13 +16,13 @@
    <!-- important le csrf_field() pour faire rentre tes informations -->
       @csrf
    <div>
-       <input type="text" name="name" id="name" placeholder="name">
+       <input type="text" name="libelle" id="libelle" placeholder="libelle">
    </div>
    <div>
-       <input type="text" name="prenom" id="prenom"placeholder="prenom">
+       <input type="text" name="quantite_minimal" id="quantite_minimal"placeholder="quantite_minimal">
    </div>
    <div>
-       <input type="text" name="email" id="email" placeholder="email">
+       <input type="text" name="quantite_stock" id="quantite_stock" placeholder="quantite_stock">
    </div>
    <div>
        <input type="submit" value="envoyer">

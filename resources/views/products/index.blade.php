@@ -12,9 +12,9 @@
 <table>
     <tr>
         <th>ID</th>
-        <th>nom</th>
-        <th>prenom</th>
-        <th>email</th>
+        <th>libelle</th>
+        <th>quantite_minimal</th>
+        <th>quantite_stock</th>
         <th colspan="3">action</th>
     </tr>
     <?php
@@ -24,9 +24,9 @@
     @foreach($users as $User)
     <tr>
         <td><?= $num++ ; ?></td>
-        <td>{{$User->name}}</td>
-        <td>{{$User->prenom}}</td>
-        <td>{{$User->email}}</td>
+        <td>{{$User->libelle}}</td>
+        <td>{{$User->quantite_minimal}}</td>
+        <td>{{$User->quantite_stock}}</td>
         <td>
             <form action="{{ route('products.destroy', $User->id )}}" method="POST">
             <a href="{{ route('products.show', $User->id) }}">show</a>
@@ -39,6 +39,8 @@
     </tr>
     @endforeach
 </table>
+
+<a href="{{ route('inscriptions.index')}}">Retour</a>
 
 
 
